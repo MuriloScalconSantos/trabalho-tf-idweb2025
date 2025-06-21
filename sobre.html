@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="img/github.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Github</title>
+</head>
+
+<!-- cor do corpo retirado do bootstrap-->
+<body class="bg-dark text-light">
+
+    <!-- Navbar do bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-github">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-github" style="font-size: 35px; margin-right: 10px;"></i>
+                <a class="navbar-brand fw-bold" href="#"> Guia GitHub</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comandos.html"><i class="bi bi-terminal"></i> Comandos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="guia.html"><i class="bi bi-download"></i> Instalação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobre.html"><i class="bi bi-book"></i> Sobre</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container my-5"> 
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                
+                
+                <div class="card-body">
+                    <h4><i class="bi bi-github"></i> Sobre o GitHub</h4>
+                    <br> 
+                    <!-- lista ordenada -->
+                    <span>O GitHub é uma plataforma baseada em nuvem em que é possível armazenar, 
+                        compartilhar e trabalhar com outras pessoas para escrever códigos. <br>
+                        O seguinte é possível ao armazenar códigos em um "repositório" no GitHub:</span><br><br>
+                    <ul> 
+                        <li>Demonstre ou compartilhe seu trabalho.</li>
+                        <li>Acompanhe e gerencie alterações no código ao longo do tempo.</li>
+                        <li>Permita que outras pessoas revisem o seu código e deem sugestões para melhorá-lo.</li>
+                        <li>Colabore em um projeto compartilhado sem se preocupar que suas alterações afetarão 
+                            o trabalho de seus colaboradores antes que você esteja pronto para integrá-los.</li>
+                        <br>
+                        <span>O trabalho colaborativo, uma das características fundamentais do GitHub, é possível 
+                            graças ao software de código aberto Git, que serviu como base para a criação do GitHub.</span>
+                    </ul><br><br>
+                    <h4><i class="bi bi-git"></i> Sobre o Git</h4>
+                    <span>O Git é um sistema de controle de versão que acompanha as alterações nos arquivos de forma 
+                        inteligente. O Git é particularmente útil quando você e um grupo de pessoas fazem alterações 
+                        nos mesmos arquivos ao mesmo tempo.</span>
+                    <span>Normalmente, para fazer isso em um fluxo de trabalho baseado no Git, você deve:</span><br><br>
+                     <ul> 
+                        <li>Criar uma ramificação com base na cópia main dos arquivos em 
+                            que você (e seus colaboradores) estão trabalhando.</li>
+                        <li>Faça edições nos arquivos de forma independente e 
+                            segura em sua própria ramificação pessoal.</li>
+                        <li>Permita que o Git mescle de forma inteligente suas alterações específicas 
+                            na cópia main dos arquivos para que suas alterações não afetem as atualizações de outras pessoas.</li>
+                        <li>Deixe o Git rastrear suas alterações e as de outras pessoas para que todos permaneçam trabalhando 
+                            na versão mais atualizada do projeto.</li>
+                    </ul><br><br>
+                     <h4><i class="bi bi-arrow-repeat"></i> Como Git e GitHub Trabalham juntos?</h4>
+                        <span>Ao carregar arquivos no GitHub, você os armazenará em um "repositório Git". Isso significa 
+                        que, quando você faz alterações (ou "commits") nos arquivos que estão no GitHub, o Git começa 
+                        automaticamente a monitorar e gerenciar essas alterações. <br>
+                        Há muitas ações relacionadas ao Git que você pode realizar diretamente no GitHub pelo navegador, como criar um 
+                        repositório Git, criar branches e carregar e editar arquivos. <br>
+                        No entanto, a maioria das pessoas trabalha localmente nos arquivos (no próprio computador) e sincroniza continuamente essas alterações locais, 
+                        além de todos os dados relacionados do Git, com o repositório central "remoto" no GitHub. Há muitas ferramentas que você pode usar para fazer isso, como o GitHub Desktop.<br><br>
+                        Depois de começar a colaborar com outros e todos precisarem trabalhar no mesmo repositório e ao mesmo tempo, você irá, de forma contínua:</span><br><br>
+                        <li>Efetue pull de todas as últimas alterações feitas pelos colaboradores do repositório remoto no GitHub.</li>
+                        <li>Efetue push das alterações no repositório remote no GitHub.</li><br> <br>
+                        <span>O Git descobre como mesclar de maneira inteligente esse fluxo de alterações, e o GitHub ajuda você a gerenciar o fluxo por meio de recursos como "pull requests".</span>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-github py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 Guia GitHub - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    

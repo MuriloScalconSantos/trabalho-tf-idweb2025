@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="icon" href="img/github.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-github">
         <div class="container">
             <div class="d-flex align-items-center">
-                <img src="img/github.png" alt="GitHub Logo" class="rounded-circle me-2" width="40">
+                <i class="bi bi-github" style="font-size: 35px; margin-right: 10px;"></i>
                 <a class="navbar-brand fw-bold" href="#">Guia GitHub</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -33,14 +34,122 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="guia.html"><i class="bi bi-download"></i> Instalação</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobre.html"><i class="bi bi-book"></i> Sobre</a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Conteúdo Principal -->
-   
-
+    <div class="container my-5"> 
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="border-bottom pb-2 mb-4"><i class="bi bi-box-arrow-down"></i> Instalar o Git</h2>
+                
+                <div class="card bg-secondary mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-search"></i> Verificando o Git</h4>
+                        <br> 
+                        <!-- lista ordenada -->
+                        <ul> 
+                            <h5>Para verificar se você já tem o Git instalado, abra seu aplicativo de terminal.</h5>
+                            <li>Se você estiver em um Mac, procure por um aplicativo de prompt de comando chamado "Terminal".</li>
+                            <li>Se você estiver em uma máquina Windows, abra o prompt de comando do Windows ou o "Git Bash".</li>
+                            <br>
+                            <span>Após abrir o aplicativo de terminal, digite <code>git version</code>. 
+                                A saída informará qual versão do Git está instalada ou alertará que <code>git</code> se trata de um comando desconhecido. 
+                                Se for um comando desconhecido, continue lendo e descubra como instalar o Git.</span>
+                        </ul>
+                        <h4>Exemplo:</h4>
+                        <div class="cmd-box"><code>$ git version <br> bash: git: command not found</code></div>
+                        <br>
+                        <h4><i class="bi bi-pc-display-horizontal"></i> Instalar o Git usando o GitHub Desktop</h4>
+                        <span>A instalação do GitHub Desktop também instalará a versão mais recente do Git, 
+                            caso você ainda não a tenha. Com o GitHub Desktop, você obtém uma versão 
+                            de linha de comando do Git com uma interface gráfica robusta. Independentemente de você 
+                            ter o Git instalado ou não, o GitHub Desktop oferece uma ferramenta de 
+                            colaboração simples para o Git. <a href="https://desktop.github.com/download/">GitHub Desktop Aqui</a></span>
+                    </div>
+                </div>
+                <div class="card bg-secondary mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-windows"></i> Baixar Git no Windows</h4>
+                        <br> 
+                        <!-- lista ordenada -->
+                        <ol> 
+                            <li>Pesquise <a>o <a href="https://gitforwindows.org/">instalador mais recente do git</a> 
+                            para seu Windows e instale-o.</a></li>
+                            <li>Após Instalar abra o instalador e siga o passo a passo para concluir a instalação.</li>
+                            <li>Abra o prompt de comando do Windows (ou Git Bash se você optou por não usar o 
+                            prompt de comando padrão do Git do Windows durante a instalação do Git).</li>
+                            <li>Digite o comando <code>git version</code> para verificar se o git foi instalado.</li>
+                            <br>
+                            <h4>Exemplo:</h4>
+                            <div class="cmd-box"><code>$ git version <br> git version 2.49.0.windows.1</code></div> 
+                        </ol>
+                    </div>
+                </div>
+                <div class="card bg-secondary mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-apple"></i> Baixar Git no Mac</h4>
+                        <br> 
+                        <!-- lista ordenada -->
+                        <ol> 
+                            <li>Pesquise <a>o <a href="https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect">instalador mais recente do git</a> 
+                            para seu MacOs e instale-o.</a></li>
+                            <li>Após Instalar abra o instalador e siga o passo a passo para concluir a instalação.</li>
+                            <li>Abra o prompt de comando "terminal" e digite <code>git version</code> para verificar se o Git foi instalado.</li>
+                            <br>
+                            <h4>Exemplo:</h4>
+                            <div class="cmd-box"><code>$ git --version<br> git version 2.44.0</code></div> 
+                        </ol>
+                    </div>
+                </div>
+                <div class="card bg-secondary mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-ubuntu"></i> Instalar o Git no Debian/Ubuntu (Linux)</h4>
+                        <br> 
+                        <!-- lista ordenada -->
+                        <ol> 
+                            <li>Pacotes Git estão disponíveis usando <code>apt</code>.</a></li>
+                            <li>É uma boa ideia garantir que você esteja executando a versão mais recente. Para isso, 
+                            acesse o prompt de comando e execute o seguinte comando para garantir que tudo esteja atualizado: <code>sudo apt-get update</code>.</li>
+                            <li>Para instalar o Git, execute o seguinte comando: <code>sudo apt-get install git-all</code>.</li>
+                            <li>Depois que a saída do comando for concluída, você pode verificar a instalação digitando: <code>git version</code></li>
+                            <br>
+                            <h4>Exemplo:</h4>
+                            <div class="cmd-box"><code>$ sudo apt-get update<br><br> Atingido:1 http://security.ubuntu.com/ubuntu focal-security InRelease <br>
+                            Atingido:2 http://archive.ubuntu.com/ubuntu focal InRelease<br>
+                            Atingido:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease<br>
+                            Atingido:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease<br>
+                            Lendo listas de pacotes... Pronto<br><br>
+                            $ sudo apt-get install git-all <br><br> Lendo listas de pacotes... Pronto
+                            Construindo árvore de dependências <br>    
+                            Lendo informação de estado... Pronto <br>
+                            Os seguintes pacotes adicionais serão instalados: <br>
+                            git git-man liberror-perl <br>
+                            Pacotes sugeridos: <br>
+                            git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+                            Os NOVOS pacotes a seguir serão instalados: <br>
+                            git git-all git-man liberror-perl <br>
+                            0 pacotes atualizados, 4 pacotes novos serão instalados, 0 a serem removidos e 0 não atualizados. <br>
+                            Depois desta operação, 42,8 MB adicionais de espaço em disco serão usados. <br>
+                            Você quer continuar? [S/n] s <br>
+                            Obtendo:1 http://archive.ubuntu.com/ubuntu focal/main amd64 liberror-perl all 0.17029-1 [26,5 kB] <br>
+                            Obtendo:2 http://archive.ubuntu.com/ubuntu focal/main amd64 git-man all 1:2.25.1-1ubuntu3.10 [886 kB] <br>
+                            Obtendo:3 http://archive.ubuntu.com/ubuntu focal/main amd64 git amd64 1:2.25.1-1ubuntu3.10 [4.164 kB] <br>
+                            Obtendo:4 http://archive.ubuntu.com/ubuntu focal/main amd64 git-all all 1:2.25.1-1ubuntu3.10 [1.616 B] <br>
+                            Baixados 5.078 kB em 2s (2.126 kB/s) <br>
+etc .. <br><br> $ git --version <br><br> git version 2.25.1</code></div> 
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="bg-github py-4 mt-5">
         <div class="container text-center">
